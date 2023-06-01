@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "nome": "Tradicional",
+    "descricao": "hambúrguer de carne grelhado com alface, tomate e maionese.",
+    "preco": 15.99
+  },
+  {
+    "id": "2",
+    "nome": "Hambúrguer furios 2",
+    "descricao": "Pão, 3x carne, alface, tomate e queijo",
+    "preco": "R$:20.00"
+  },
+  {
+    "id": "3",
+    "nome": "Hambúrguer furios 2",
+    "descricao": "Pão, 3x carne, alface, tomate e queijo",
+    "preco": 20.99
+  }
+]
