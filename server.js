@@ -7,7 +7,8 @@ app.use(bodyParser.json());
 
 const menuFilePath = 'menu.json';
 
-// Endpoint para adicionar um item ao cardápio
+// Endpoint para adicionar um item ao cardápio.
+//Lucas esteve aqui
 app.post('/menu', (req, res) => {
   const { id, nome, descricao, preco } = req.body;
 
