@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 const menuFilePath = 'menu.json';
 
-// Endpoint para adicionar um item ao cardápio.
+// adicionar um item ao cardápio.
 app.post('/menu', (req, res) => {
   const { id, nome, descricao, preco } = req.body;
 
@@ -29,13 +29,13 @@ app.post('/menu', (req, res) => {
   return res.status(201).json(newItem);
 });
 
-// Endpoint para retornar o cardápio completo
+// retornar o cardápio completo
 app.get('/menu', (req, res) => {
   const menu = loadMenu();
   return res.json(menu);
 });
 
-// Endpoint para retornar um item específico do cardápio por ID
+// retornar um item específico do cardápio por ID
 app.get('/menu/:id', (req, res) => {
   const { id } = req.params;
   const menu = loadMenu();
@@ -48,7 +48,7 @@ app.get('/menu/:id', (req, res) => {
   return res.json(item);
 });
 
-// Endpoint para alterar um item do cardápio
+// alterar um item do cardápio
 app.put('/menu/:id', (req, res) => {
   const { id } = req.params;
   const { nome, descricao, preco } = req.body;
@@ -67,7 +67,7 @@ app.put('/menu/:id', (req, res) => {
   return res.json(updatedItem);
 });
 
-// Endpoint para excluir um item do cardápio
+// excluir um item do cardápio
 app.delete('/menu/:id', (req, res) => {
   const { id } = req.params;
   const menu = loadMenu();
